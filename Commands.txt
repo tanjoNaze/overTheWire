@@ -32,3 +32,59 @@ Level 8-9: -sort data.txt | uniq -u
 
 Level 9-10: strings data.txt | grep =
 	-Password: G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+
+Level 10-11: cat data.txt | base64 --decode
+	-Password: 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+
+Level 11-12: cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+	-Password: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+
+Level 12-13: mkdir /tmp/tanjona123, cd /tmp/tanjona123, cp ~/data.txt .
+		
+  -cat data.txt| xxd -r > data
+  -file data
+  -mv data data.gz
+  -gzip -d data.gz
+  -ls
+  -file data
+  -mv data data.bz
+  -bzip2 -d data.bz
+  -ls
+  -file data
+  -mv data data.gz
+  -gz -d data.gz
+  -gzip -d data.gz
+  -file data
+  -mv data data.tar
+  -tar -xf data.tar
+  -file data
+  -ls
+  -file data5.bin
+  -mv data5.bin data5.tar
+  -tar -xf data5.tar
+  -ls
+  -file data6.bin
+  -mv data6.bin data6.bz
+  -bzip2 -d data6.bz
+  -file data6
+  -ls
+  -mv data6 data6.tar
+  -tar -xf data6.tar
+  -ls
+  -file data8.bin
+  -mv data8.bin data8.gz
+  -gzip -d data8.gz
+  -ls
+  -file data8
+  -cat data8
+
+	-Password: wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+
+Level 13-14: ssh -i sshkey.private bandit14@localhost -p 2220
+	-Password: fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+
+Level 14-15:  echo "fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq" | nc localhost 30000
+	-Password: jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+
+Level 15-16: echo "jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt" | openssl s_client -connect localhost:30001 -ign_eof
+	-Password: JQttfApK4SeyHwDlI9SXGR50qclOAil1
