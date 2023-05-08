@@ -1,25 +1,42 @@
 #  Level 0-1: 
 ```
-	ls
-	cat readme
+ls
+cat readme
 ```
 
 -Password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 
 # Level 1-2: 
-	ls, cat < -
+```
+ls 
+cat < -
+```
 	-Password: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 
 # Level 2-3: 
-	ls, cat "spaces in this filename"
+```
+ls 
+cat "spaces in this filename"
+```
 	-Password: aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 
 # Level 3-4: 
-	ls, cd inhere, ls -al, cat .hidden
+```
+ls 
+cd inhere 
+ls -al 
+cat .hidden
+```
 	-Password: 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 
 # Level 4-5: 
-	ls, cd inhere, ls, file ./*, cat ./-file07
+```
+ls
+cd inhere
+ls
+file ./*
+cat ./-file07
+```
 	-Password: lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
 # Level 5-6: 
