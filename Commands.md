@@ -1,45 +1,58 @@
-Level 0-1: ls, cat readme
+#  Level 0-1: 
+	ls, cat readme
 	-Password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 
-Level 1-2: ls, cat < -
+# Level 1-2: 
+	ls, cat < -
 	-Password: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 
-Level 2-3: ls, cat "spaces in this filename"
+# Level 2-3: 
+	ls, cat "spaces in this filename"
 	-Password: aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 
-Level 3-4: ls, cd inhere, ls -al, cat .hidden
+# Level 3-4: 
+	ls, cd inhere, ls -al, cat .hidden
 	-Password: 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 
-Level 4-5: ls, cd inhere, ls, file ./*, cat ./-file07
+# Level 4-5: 
+	ls, cd inhere, ls, file ./*, cat ./-file07
 	-Password: lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
-Level 5-6: -find ./inhere -type f -size 1033c
+# Level 5-6: 
+	-find ./inhere -type f -size 1033c
 	 -cat ./inhere/maybehere07/.file2
 
 	-Password: P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
-Level 6-7: -find / -user bandit7 -group bandit6
+# Level 6-7: 
+	-find / -user bandit7 -group bandit6
 	 -cat /var/lib/dpkg/info/bandit7.password
 
 	-Password: z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 
-Level 7-8: -cat data.txt|grep millionth
+# Level 7-8: 
+	-cat data.txt|grep millionth
 
 	Password: TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 
-Level 8-9: -sort data.txt | uniq -u
+# Level 8-9: 
+	-sort data.txt | uniq -u
 	-Password: EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 
-Level 9-10: strings data.txt | grep =
+# Level 9-10: 
+	strings data.txt | grep =
 	-Password: G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 
-Level 10-11: cat data.txt | base64 --decode
+#Level 10-11: 
+	cat data.txt | base64 --decode
 	-Password: 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 
-Level 11-12: cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+# Level 11-12: 
+	cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 	-Password: JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
-Level 12-13: mkdir /tmp/tanjona123, cd /tmp/tanjona123, cp ~/data.txt .
+# Level 12-13: 
+	mkdir /tmp/tanjona123, cd /tmp/tanjona123, cp ~/data.txt .
 		
   -cat data.txt| xxd -r > data
   -file data
@@ -80,16 +93,20 @@ Level 12-13: mkdir /tmp/tanjona123, cd /tmp/tanjona123, cp ~/data.txt .
 
 	-Password: wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
-Level 13-14: ssh -i sshkey.private bandit14@localhost -p 2220
+# Level 13-14: 
+	ssh -i sshkey.private bandit14@localhost -p 2220
 	-Password: fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 
-Level 14-15:  echo "fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq" | nc localhost 30000
+# Level 14-15:  
+	echo "fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq" | nc localhost 30000
 	-Password: jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 
-Level 15-16: echo "jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt" | openssl s_client -connect localhost:30001 -ign_eof
+# Level 15-16: 
+	echo "jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt" | openssl s_client -connect localhost:30001 -ign_eof
 	-Password: JQttfApK4SeyHwDlI9SXGR50qclOAil1
 
-Level 16-17: -echo "JQttfApK4SeyHwDlI9SXGR50qclOAil1" | openssl s_client -connect localhost:31790 -ign_eof
+# Level 16-17: 
+	-echo "JQttfApK4SeyHwDlI9SXGR50qclOAil1" | openssl s_client -connect localhost:31790 -ign_eof
 	     -mkdir /tmp/myKey
 	     -cd /tmp/myKey
              -nano private.key
@@ -125,33 +142,40 @@ dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
 vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 -----END RSA PRIVATE KEY-----
 
-Level 17-18: ls, diff passwords.old passwords.new
+# Level 17-18: 
+	ls, diff passwords.old passwords.new
 	-Password: hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
 
-Level 18-19: ssh bandit18@bandit.labs.overthewire.org -p 2220 -t "/bin/sh"
+# Level 18-19: 
+	ssh bandit18@bandit.labs.overthewire.org -p 2220 -t "/bin/sh"
 	-Password: awhqfNnAbc1naukrpqDYcF95h7HoMTrC
 
-Level 19-20: ./bandit20-do cat /etc/bandit_pass/bandit20
+# Level 19-20: 
+	./bandit20-do cat /etc/bandit_pass/bandit20
 	-Password: VxCazJaVykI6W36BkBU0mJTCM8rR95XT
 
-Level 20-21: 	-ls
+# Level 20-21: 	
+		-ls
 		-echo "VxCazJaVykI6W36BkBU0mJTCM8rR95XT" | nc -l -p 2710 &
 		-./suconnect 2710
 
 	-Password: NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
 
-Level 21-22: -cat /etc/cron.d/cronjob_bandit22
+# Level 21-22: 
+		-cat /etc/cron.d/cronjob_bandit22
 	     -cat /usr/bin/cronjob_bandit22.sh
 	-Password: WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
 
-Level 22-23: -ls /etc/cron.d
+# Level 22-23: 
+		-ls /etc/cron.d
 	     -cat /etc/cron.d/cronjob_bandit23
 	     -cat /usr/bin/cronjob_bandit23.sh
           -echo "I am user bandit23" | md5sum | cut -d ' ' -f 1
 	     -cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 	-Password: QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
 
-Level 23-24: -cd /tmp
+# Level 23-24: 
+		-cd /tmp
              -mkdir tjnaze
              -cd tjnaze
              -touch script.sh
