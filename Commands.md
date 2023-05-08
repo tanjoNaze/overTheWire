@@ -1,6 +1,7 @@
 #  Level 0-1: 
-	ls, cat readme
-	-Password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+- ls, 
+- cat readme
+-Password: NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 
 # Level 1-2: 
 	ls, cat < -
